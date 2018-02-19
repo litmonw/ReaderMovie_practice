@@ -1,0 +1,29 @@
+<!-- 引入模板文件 可以使用相对/绝对路径 -->
+<import src="post-item/post-item-template.wxml" />
+
+  <view>
+    <swiper indicator-dots='true' autoplay='true' interval='2000'>
+      <swiper-item>
+        <image src='/images/wx.png'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/vr.png'></image>
+      </swiper-item>
+      <swiper-item>
+        <image src='/images/iqiyi.png'></image>
+      </swiper-item>
+    </swiper>
+
+    <!-- wx-for-item 默认为 item -->
+    <block wx:for='{{ postsKey }}' wx-for-item='item'>
+      <!-- template -->
+      <!-- data 属性绑定数据 -->
+      <view class='post-container' catchtap="onPostTap" data-postId="{{ item.postId }}">
+        <template is="postItem" data="{{ ...item }}" />
+      </view>
+    </block>
+
+  </view>
+
+  <!-- 整个swiper组件的宽高，
+swiper-item 宽高自动设置为100% -->
