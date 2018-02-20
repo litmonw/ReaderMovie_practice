@@ -90,9 +90,9 @@ Page({
       })
     } else {
       wx.playBackgroundAudio({
-        dataUrl: postData.music.dataUrl,
+        dataUrl: postData.music.url,
         title: postData.music.title,
-        coverImgUrl: postData.music.coverImgUrl
+        coverImgUrl: postData.music.coverImg
       });
 
       if (app.globalData.g_isPlayingMusic) {
