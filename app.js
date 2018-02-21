@@ -37,6 +37,8 @@ App({
     // 全局音乐播放状态
     g_isPlayingMusic: false,
     // 音乐播放所在文章编号
-    g_currentMusicPostId: null
+    g_currentMusicPostId: null,
+    // 豆瓣电影数据源
+    doubanBase: 'http://t.yushu.im'
   }
 })

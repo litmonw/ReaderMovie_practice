@@ -1,29 +1,7 @@
-/**index.wxss**/
- /* .userinfo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
-}
-
-.userinfo-nickname {
-  color: #aaa;
-}
-
-.usermotto {
-  margin-top: 200px;
-}  */
-
 .container {
   display: flex;
   flex-direction: column;
-    align-items: center;  
+  align-items: center;
 }
 
 .user-avatar {
@@ -31,14 +9,13 @@
   height: 200rpx;
   margin-top: 160rpx;
   border-radius: 50%;
-  background-color: blue;
 }
 
 .user-name {
   font-size: 32rpx;
   font-family: MicroSoft Yahei;
   font-weight: bold;
-   margin-top: 100rpx;
+  margin-top: 100rpx;
 }
 
 .moto-container {
@@ -55,7 +32,7 @@
   font-weight: bold;
   line-height: 80rpx;
 }
- 
+
 page {
   height: 100%;
   background-color: #b3d4db;
