@@ -6,7 +6,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    "inTheaters": {}
   },
 
   /**
@@ -68,17 +68,13 @@ Page({
       categoryTitle: categoryTitle
     }; 
     this.setData(readyData);
-
-    // this.setData({
-    //   readyData: movies
-    // });
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
+  onMoreTap: function (event) {
+    var category = event.currentTarget.dataset.category;
+    wx.navigateTo({
+      url: 'more-movies/more-movies?category=' + category,
+    })
   },
 
   /**
